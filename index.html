@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ice Cream Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url('./img/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+
+  <div class="container mt-4 text-center">
+    <h3>ICE CREAM SHOP</h3>
+
+    <div class="row mt-4 justify-content-center">
+      <!-- Strawberry -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./img/strawberry_icecream.jpg" class="card-img-top" style="height: 150px;">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry Icecream</h5>
+            <p class="card-text">Cost: $50</p>
+            <button class="btn btn-primary" onclick="addToCart('Strawberry Icecream')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chocolate -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./img/chocolate_icecream.jpg" class="card-img-top" style="height: 150px;">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Icecream</h5>
+            <p class="card-text">Cost: $50</p>
+            <button class="btn btn-primary" onclick="addToCart('Chocolate Icecream')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Butterscotch -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./img/butterscotch_icecream.jpg" class="card-img-top" style="height: 150px;">
+          <div class="card-body">
+            <h5 class="card-title">Butterscotch Icecream</h5>
+            <p class="card-text">Cost: $50</p>
+            <button class="btn btn-primary" onclick="addToCart('Butterscotch Icecream')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="mt-5">
+      <h4 style="color: white;">Cart Items</h4>
+      <ul id="cartList" class="list-group mt-3"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
